@@ -8,21 +8,32 @@ export default {
     extend: {
       colors: {
         slate: {
-          950: '#020617',
-          900: '#0f172a',
+          950: '#030307',
+          900: '#0a0a12',
+          800: '#171726',
         },
-        accent: {
-          sky: '#38bdf8',
-          blue: '#3b82f6',
-        }
+        sky: {
+          100: 'rgb(var(--p-200) / <alpha-value>)',
+          200: 'rgb(var(--p-200) / <alpha-value>)',
+          300: 'rgb(var(--p-300) / <alpha-value>)',
+          400: 'rgb(var(--p-400) / <alpha-value>)',
+          500: 'rgb(var(--p-500) / <alpha-value>)',
+          600: 'rgb(var(--p-600) / <alpha-value>)',
+          950: 'rgb(var(--p-950) / <alpha-value>)',
+        },
+        blue: {
+          200: 'rgb(var(--s-300) / <alpha-value>)',
+          300: 'rgb(var(--s-300) / <alpha-value>)',
+          400: 'rgb(var(--s-400) / <alpha-value>)',
+          500: 'rgb(var(--s-500) / <alpha-value>)',
+          600: 'rgb(var(--s-600) / <alpha-value>)',
+          950: 'rgb(var(--p-950) / <alpha-value>)',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
-      backgroundImage: {
-        'grid-pattern': "linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px)",
-      }
     },
   },
   plugins: [],

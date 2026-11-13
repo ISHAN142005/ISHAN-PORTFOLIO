@@ -32,19 +32,19 @@ export const ContactFooterSection: React.FC = () => {
         id="contact"
         className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20"
       >
-        <div className="rounded-3xl bg-gradient-to-br from-[#0f172a] via-[#0f172a] to-slate-950 border border-slate-800/90 p-6 sm:p-10 lg:p-12 relative overflow-hidden shadow-2xl">
-          <div className="absolute -top-32 -right-32 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="rounded-3xl obsidian-card border border-slate-800/90 p-6 sm:p-10 lg:p-12 relative overflow-hidden">
+          <div className="absolute -top-32 -right-32 w-96 h-96 bg-sky-500/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Column: Pitch & Direct Contact */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/25">
                 <Mail className="w-3.5 h-3.5" />
                 Let&apos;s Connect
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-50 tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
                 Open for SDE, Quantitative &amp; AI/ML Roles
               </h2>
 
@@ -57,12 +57,12 @@ export const ContactFooterSection: React.FC = () => {
               {/* Contact Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 {/* Email Card */}
-                <div className="p-4 rounded-2xl bg-slate-950/85 border border-slate-800/90 flex items-center justify-between gap-3">
+                <div className="p-4 rounded-2xl bg-[#040408] border border-slate-800/90 flex items-center justify-between gap-3">
                   <a
                     href={PERSONAL_INFO.emailHref}
                     className="flex items-center gap-3 min-w-0 group"
                   >
-                    <div className="p-2.5 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20 shrink-0">
+                    <div className="p-2.5 rounded-xl bg-sky-500/15 text-sky-400 border border-sky-500/30 shrink-0">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div className="min-w-0">
@@ -75,7 +75,7 @@ export const ContactFooterSection: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => handleCopy(PERSONAL_INFO.email, 'email')}
-                    className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-sky-400 border border-slate-800 transition-colors shrink-0"
+                    className="p-2 rounded-lg bg-[#090912] hover:bg-slate-800 text-slate-400 hover:text-sky-400 border border-slate-800 transition-colors shrink-0"
                     title="Copy email address"
                     aria-label="Copy email address"
                   >
@@ -88,12 +88,12 @@ export const ContactFooterSection: React.FC = () => {
                 </div>
 
                 {/* Phone Card */}
-                <div className="p-4 rounded-2xl bg-slate-950/85 border border-slate-800/90 flex items-center justify-between gap-3">
+                <div className="p-4 rounded-2xl bg-[#040408] border border-slate-800/90 flex items-center justify-between gap-3">
                   <a
                     href={PERSONAL_INFO.phoneHref}
                     className="flex items-center gap-3 min-w-0 group"
                   >
-                    <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 shrink-0">
+                    <div className="p-2.5 rounded-xl bg-blue-500/15 text-blue-400 border border-blue-500/30 shrink-0">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div className="min-w-0">
@@ -106,7 +106,7 @@ export const ContactFooterSection: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => handleCopy(PERSONAL_INFO.phone, 'phone')}
-                    className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-sky-400 border border-slate-800 transition-colors shrink-0"
+                    className="p-2 rounded-lg bg-[#090912] hover:bg-slate-800 text-slate-400 hover:text-sky-400 border border-slate-800 transition-colors shrink-0"
                     title="Copy phone number"
                     aria-label="Copy phone number"
                   >
@@ -121,7 +121,7 @@ export const ContactFooterSection: React.FC = () => {
 
               {/* Location & Profiles */}
               <div className="flex flex-wrap items-center gap-3 pt-1">
-                <span className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950/80 border border-slate-800 text-xs font-mono text-slate-300">
+                <span className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#040408] border border-slate-800 text-xs font-mono text-slate-300">
                   <MapPin className="w-3.5 h-3.5 text-sky-400" />
                   {PERSONAL_INFO.location}
                 </span>
@@ -129,7 +129,7 @@ export const ContactFooterSection: React.FC = () => {
                   href={PERSONAL_INFO.links.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-950/80 hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#040408] hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
                 >
                   <Linkedin className="w-3.5 h-3.5 text-sky-400" />
                   LinkedIn
@@ -139,7 +139,7 @@ export const ContactFooterSection: React.FC = () => {
                   href={PERSONAL_INFO.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-950/80 hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#040408] hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
                 >
                   <Github className="w-3.5 h-3.5 text-sky-400" />
                   GitHub
@@ -149,7 +149,7 @@ export const ContactFooterSection: React.FC = () => {
                   href={PERSONAL_INFO.links.leetcode}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-950/80 hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#040408] hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
                 >
                   <Code2 className="w-3.5 h-3.5 text-amber-400" />
                   LeetCode
@@ -159,7 +159,7 @@ export const ContactFooterSection: React.FC = () => {
                   href={PERSONAL_INFO.links.hackerrank}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-950/80 hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#040408] hover:bg-slate-900 border border-slate-800 hover:border-sky-500/40 text-xs font-mono text-slate-200 hover:text-sky-300 transition-all"
                 >
                   <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
                   HackerRank
@@ -174,7 +174,7 @@ export const ContactFooterSection: React.FC = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45 }}
-              className="lg:col-span-5 rounded-2xl bg-slate-950/90 border border-sky-500/30 p-6 sm:p-8 space-y-5 shadow-xl shadow-sky-950/20"
+              className="lg:col-span-5 rounded-2xl bg-[#040408] border border-sky-500/35 p-6 sm:p-8 space-y-5 shadow-xl"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -182,12 +182,12 @@ export const ContactFooterSection: React.FC = () => {
                     <FileText className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-50">One-Page Resume</h3>
+                    <h3 className="text-lg font-bold text-white">One-Page Resume</h3>
                     <p className="text-xs font-mono text-slate-400">Ishan_Bohra_Resume.pdf</p>
                   </div>
                 </div>
                 <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/25">
-                  Updated
+                  Verified PDF
                 </span>
               </div>
 
@@ -219,7 +219,7 @@ export const ContactFooterSection: React.FC = () => {
                 <a
                   href={RESUME_URL}
                   download="Ishan_Bohra_Resume.pdf"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-sky-300 border border-sky-500/35 font-semibold text-sm transition-all"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#090912] hover:bg-slate-800 text-sky-300 border border-sky-500/35 font-semibold text-sm transition-all"
                 >
                   <Download className="w-4 h-4" />
                   <span>Download PDF</span>
@@ -231,10 +231,10 @@ export const ContactFooterSection: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-900 bg-[#020617] py-10">
+      <footer className="border-t border-slate-900 bg-[#020205] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center font-mono font-bold text-xs text-sky-400">
+            <div className="w-8 h-8 rounded-lg bg-[#080810] border border-slate-800 flex items-center justify-center font-mono font-bold text-xs text-sky-400">
               IB
             </div>
             <div className="text-xs sm:text-sm text-slate-400">

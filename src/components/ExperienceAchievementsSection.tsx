@@ -19,7 +19,7 @@ import {
 
 export const ExperienceAchievementsSection: React.FC = () => {
   return (
-    <div className="space-y-24 py-16 md:py-24">
+    <div className="space-y-24 py-16 md:py-24 bg-[#020205]">
       {/* Experience & Hackathon Achievements */}
       <section
         id="experience"
@@ -27,11 +27,11 @@ export const ExperienceAchievementsSection: React.FC = () => {
       >
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/25 mb-3">
               <Briefcase className="w-3.5 h-3.5" />
               Industry &amp; Competitive Track Record
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-50 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
               Experience &amp; Hackathon Wins
             </h2>
           </div>
@@ -48,12 +48,12 @@ export const ExperienceAchievementsSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.45 }}
-            className="lg:col-span-5 rounded-2xl bg-[#0f172a]/90 border border-slate-800/90 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden"
+            className="lg:col-span-5 rounded-2xl obsidian-card border border-slate-800/90 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden"
           >
             <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="space-y-5 relative">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-sky-500/10 text-sky-300 border border-sky-500/25">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-sky-500/15 text-sky-300 border border-sky-500/30">
                 <Briefcase className="w-3.5 h-3.5 text-sky-400" />
                 Industry Internship
               </div>
@@ -61,7 +61,7 @@ export const ExperienceAchievementsSection: React.FC = () => {
               {EXPERIENCE_DATA.map((exp) => (
                 <div key={exp.company} className="space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-50">{exp.company}</h3>
+                    <h3 className="text-2xl font-bold text-white">{exp.company}</h3>
                     <div className="text-base font-semibold text-sky-400 mt-0.5">
                       {exp.role}
                     </div>
@@ -105,7 +105,7 @@ export const ExperienceAchievementsSection: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className="rounded-2xl bg-[#0f172a]/90 hover:bg-[#0f172a] border border-slate-800/90 hover:border-sky-500/40 p-6 transition-all"
+                className="rounded-2xl obsidian-card border border-slate-800/90 hover:border-sky-500/40 p-6 transition-all"
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                   <span className="text-xs font-mono text-sky-400 font-semibold">
@@ -125,7 +125,7 @@ export const ExperienceAchievementsSection: React.FC = () => {
                   </span>
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-slate-100">
+                <h3 className="text-lg sm:text-xl font-bold text-white">
                   {ach.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300/90 leading-relaxed mt-2">
@@ -146,11 +146,11 @@ export const ExperienceAchievementsSection: React.FC = () => {
           {/* Leadership & Campus Responsibilities */}
           <div className="lg:col-span-7 space-y-6">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/25 mb-3">
                 <Users className="w-3.5 h-3.5" />
                 Leadership &amp; Extracurricular
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-50 tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
                 Campus Technical Leadership
               </h2>
               <p className="text-sm text-slate-400 mt-1">
@@ -167,14 +167,14 @@ export const ExperienceAchievementsSection: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.35, delay: idx * 0.07 }}
-                  className="p-5 rounded-2xl bg-[#0f172a]/85 border border-slate-800/90 hover:border-sky-500/35 transition-all flex flex-col justify-between"
+                  className="p-5 rounded-2xl obsidian-card border border-slate-800/90 hover:border-sky-500/35 transition-all flex flex-col justify-between"
                 >
                   <div>
                     <div className="inline-flex items-center gap-1.5 text-[11px] font-mono text-sky-400 uppercase tracking-wider">
                       <Sparkles className="w-3 h-3" />
                       {item.scope}
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold text-slate-100 mt-1">
+                    <h3 className="text-base sm:text-lg font-bold text-white mt-1">
                       {item.role}
                     </h3>
                     <div className="text-xs font-medium text-slate-400 mt-0.5">
@@ -192,11 +192,11 @@ export const ExperienceAchievementsSection: React.FC = () => {
           {/* Verifiable Certifications */}
           <div id="certifications" className="lg:col-span-5 space-y-6 scroll-mt-24">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-wider bg-sky-500/10 text-sky-400 border border-sky-500/25 mb-3">
                 <BadgeCheck className="w-3.5 h-3.5" />
                 Credentials &amp; Training
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-50 tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
                 Certifications
               </h2>
               <p className="text-sm text-slate-400 mt-1">
@@ -212,10 +212,10 @@ export const ExperienceAchievementsSection: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: idx * 0.1 }}
-                  className="p-6 rounded-2xl bg-[#0f172a]/90 border border-slate-800/90 hover:border-sky-500/40 transition-all space-y-3"
+                  className="p-6 rounded-2xl obsidian-card border border-slate-800/90 hover:border-sky-500/40 transition-all space-y-3"
                 >
                   <div className="flex items-center justify-between gap-2">
-                    <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-500/10 text-sky-300 border border-sky-500/25">
+                    <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-500/15 text-sky-300 border border-sky-500/30">
                       {cert.date}
                     </span>
                     {cert.verifyUrl && (
@@ -231,7 +231,7 @@ export const ExperienceAchievementsSection: React.FC = () => {
                     )}
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-bold text-slate-100 leading-snug">
+                  <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
                     {cert.title}
                   </h3>
                   <div className="text-xs sm:text-sm font-medium text-sky-400">

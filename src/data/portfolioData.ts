@@ -12,6 +12,7 @@ export interface ProjectItem {
   summary: string;
   highlights: string[];
   metrics: { label: string; value: string }[];
+  architectureFlow: string[];
   accentColor: string;
 }
 
@@ -201,6 +202,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Universe', value: 'NSE Nifty 100' },
       { label: 'Execution', value: 'Zero Look-Ahead' },
     ],
+    architectureFlow: [
+      'Parquet Data Lake & Quality Audit Gate',
+      'Point-in-Time Signal & Factor Engine',
+      'Deterministic next_open Execution & Statutory Cost Engine',
+      'FastAPI + Next.js / Streamlit Attribution Dashboard',
+    ],
     accentColor: 'from-sky-500/20 via-blue-500/10 to-transparent',
   },
   {
@@ -229,6 +236,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Campus Reach', value: '33+ Universities' },
       { label: 'Marketplace Fee', value: '0% Peer-to-Peer' },
       { label: 'Core Utility', value: '75% Attendance Sim' },
+    ],
+    architectureFlow: [
+      'NextAuth.js Verified Campus Identity Layer',
+      'Next.js 16 App Router + React 19 Server Actions',
+      'Prisma ORM Multi-Campus Relational Schema',
+      'Zero-Fee Marketplace, Club Hubs & Attendance Simulator',
     ],
     accentColor: 'from-blue-500/20 via-indigo-500/10 to-transparent',
   },
@@ -261,6 +274,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Inference Target', value: '< 1s CPU' },
       { label: 'Hackathon', value: 'SIH 2026 Shortlist' },
     ],
+    architectureFlow: [
+      'Copernicus Satellite NetCDF4 / Zarr Ingestion via Xarray',
+      'PyTorch U-Net 15-Level Depth Reconstruction (<1s CPU)',
+      'FastAPI Geospatial Inference Microservice',
+      'React + Three.js 3D Volumetric Thermal Profile Viewer',
+    ],
     accentColor: 'from-cyan-500/20 via-sky-500/10 to-transparent',
   },
   {
@@ -283,6 +302,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Architecture', value: 'Modular FSM' },
       { label: 'Recognition', value: '3rd Place Xebia' },
       { label: 'Engine', value: 'C++ & SFML' },
+    ],
+    architectureFlow: [
+      'C++ Core Game Loop & Event Dispatcher',
+      'Modular Finite State Machine (Menu / Battle / Training / Profile)',
+      'Elemental Turn-Based Combat & Particle Renderer (SFML)',
+      'Deterministic JSON Profile & Save Persistence',
     ],
     accentColor: 'from-sky-500/20 via-emerald-500/10 to-transparent',
   },
@@ -315,6 +340,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Survival Mode', value: '60s Timed Loops' },
       { label: 'Cloud Sync', value: 'Firebase Web' },
     ],
+    architectureFlow: [
+      'Native C + GTK4 Event-Driven Widget Hierarchy',
+      '60-Second Survival Timer & Difficulty-Scaled Word Engine',
+      'Asynchronous GStreamer Audio & Live Telemetry Logger',
+      'HTML5/ES6 Web Port + Firebase Realtime Leaderboard',
+    ],
     accentColor: 'from-blue-500/20 via-sky-500/10 to-transparent',
   },
   {
@@ -344,6 +375,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: 'Experience Flow', value: '6 Interactive Stages' },
       { label: 'Graphics', value: 'HTML5 Canvas + SVG' },
       { label: 'Personalization', value: 'Dynamic URL Params' },
+    ],
+    architectureFlow: [
+      'Dynamic URL Parameter Parser (?from=&to=)',
+      '6-Stage Framer Motion State Orchestrator',
+      '60fps HTML5 Canvas Fireworks Physics & Web Audio Synthesizer',
+      'Interactive Clockwise Aarti Tracking & SVG Gift Engine',
     ],
     accentColor: 'from-amber-500/15 via-sky-500/10 to-transparent',
   },
